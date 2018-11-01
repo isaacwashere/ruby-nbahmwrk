@@ -1,0 +1,10 @@
+<h1>League</h1>
+
+<%= link_to root_path(sort: "by_wins") do%>   
+    <span class="badge badge-primary">Sort by Wins</span>
+<% end %>
+<%= link_to root_path(sort: "by_losses") do%>   
+    <span class="badge badge-danger">Sort by Losses</span>
+<% end %>
+
+<%= render 'table', teams: @teams%>

@@ -1,0 +1,26 @@
+<table class="table">
+  <thead>
+    <tr>
+      <th>City</th>
+      <th>Nickname</th>
+      <th>Wins</th>
+      <th>Losses</th>
+      <th>Conference</th>
+      <th>Win Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @teams.each do |team| %>
+    <tr>
+      <td><%= team.city %></td>
+      <td><%= team.nickname %> </td>
+      <td><%= team.wins %></td>
+      <td><%= team.losses%></td>
+      <td><%= team.conference%></td>
+      <td><%= team.win_rate %>
+    </tr>
+    <% end %>
+
+  </tbody>
+
+</table>
